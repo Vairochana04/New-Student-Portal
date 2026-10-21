@@ -1,4 +1,4 @@
-# Student Portal — My-Project
+# Student Portal
 
 React 19 + Vite student portal, converted from the existing PSG Campus Compass portal.
 
@@ -8,9 +8,20 @@ React 19 + Vite student portal, converted from the existing PSG Campus Compass p
 - JDK 17+ for the original Java API backend (recommended).
 - Alternatively Python 3: the backend launcher uses the equivalent Python API if `javac` is unavailable.
 
-## Windows: run locally
+## Windows: run in VS Code (easiest)
 
-Extract the ZIP first. Open PowerShell **inside My-Project**, where package.json is located.
+1. Right-click `Student-Portal-NO-FEE-NEW.zip` -> **Extract All...** You get ONE folder: `Student-Portal-NO-FEE-NEW`.
+2. Open VS Code -> **File -> Open Folder...** -> select the `Student-Portal-NO-FEE-NEW` folder (the one containing `package.json`).
+3. **Terminal -> New Terminal** (Ctrl+`) and run once: `npm install`
+4. Press **Ctrl+Shift+P** -> type **Tasks: Run Task** -> select **▶ RUN PORTAL (Backend + Website)**.
+5. Open **http://localhost:5188** in your browser.
+
+Alternatives: double-click `RUN-PORTAL.bat`, or use the two terminals below.
+To stop: close the task terminals in VS Code (or press Ctrl+C in each).
+
+## Windows: run locally (two terminals)
+
+Extract the ZIP first. Open PowerShell **inside the Student-Portal-NO-FEE-NEW folder**, where package.json is located.
 
 ### Terminal 1 — API backend
 
@@ -23,13 +34,13 @@ Keep this terminal open. The backend runs on port **8092**. Its root page is onl
 
 ### Terminal 2 — React website
 
-Open another PowerShell window in **the same My-Project folder**:
+Open another PowerShell window in **the same Student-Portal-NO-FEE-NEW folder**:
 
 ```powershell
 npm run dev
 ```
 
-Open **http://localhost:5173** (or the actual URL Vite prints if that port is busy).
+Open **http://localhost:5188** (or the actual URL Vite prints if that port is busy).
 Keep both terminals open. Use Ctrl+C to stop each process.
 
 **Demo login:** student@demo.edu / student123
@@ -45,7 +56,7 @@ npm run build
 npm run preview
 ```
 
-With the API backend still running in the other terminal, open the preview URL Vite prints (normally http://localhost:4173).
+With the API backend still running in the other terminal, open the preview URL Vite prints (normally http://localhost:5188).
 The `dist/` directory is created by the build. It and `node_modules/` are intentionally excluded from the ZIP. Run `npm ci` to install exact locked versions on subsequent installations.
 
 For production hosting, serve `dist/` with a reverse proxy routing `/api` to the API backend. The development/preview proxy is not bundled into the static build. This demo is not production-hardened; use HTTPS and review authentication, rate limiting, privacy and deployment configuration before public use.
@@ -53,12 +64,12 @@ For production hosting, serve `dist/` with a reverse proxy routing `/api` to the
 ## Folder map
 
 ```text
-My-Project/
+Student-Portal/
 ├── public/                  Static public assets (never put student records here)
 ├── src/
 │   ├── assets/              Bundled asset folder
 │   ├── components/          Login, Profile, CollegeList, CollegePage,
-│   │                        Overview, Courses, Fees, Placements,
+│   │                        Overview, Courses, Placements,
 │   │                        Location, Reviews, QA, Markup
 │   ├── App.jsx              React app and page switching
 │   ├── App.css              Preserved portal styling and responsive changes
@@ -85,9 +96,8 @@ React mounts the application, selects page components, and renders the retained 
 - Student registration/sign-in and profile persistence through the API.
 - Existing class 10 / class 12 marks, location, stay/travel, plus stream, course wanted and degree fields. No photo upload added.
 - All original PSG and Karpagam campus records, group browsing, search and saved colleges.
-- Overview: facts/highlights above recruiter/fee/next-step sections on every screen.
+- Overview: facts/highlights above recruiter/next-step sections on every screen.
 - Courses and cutoff: All / UG / PG filters; a clear message when no PG data is listed.
-- Fee structure: all listed departments, counselling/management comparison, profile-based hostel/bus/other travel defaults, expandable breakdowns and scholarship guidance.
 - Placements: recruiter section below yearly results.
 - Reviews: student comments below ratings.
 - Location, official links, maps, reminders and rule-based Q&A chat.
@@ -95,7 +105,7 @@ React mounts the application, selects page components, and renders the retained 
 
 ## Important data limitations
 
-Fees, seats, cutoffs, reviews, ratings, placement statistics and reminders are retained sample/indicative content, not current verified admissions advice. The fee calculator uses explicitly labelled **generic illustrative B.E./B.Tech inputs**, the same across campuses/departments. Other programmes display “Confirm with college”. Scholarships are not guaranteed and are not deducted. No donation/capitation estimate is included. Check official fee schedules and quota availability before making financial decisions.
+Seats, cutoffs, reviews, ratings, placement statistics and reminders are retained sample/indicative content, not current verified admissions advice. Check the official college website and quota availability before making decisions. This portal intentionally does not include a fee-structure section.
 
 Recruiter logos and maps require internet. Logo errors use monogram fallback. Remote resources are not downloaded/bundled or guaranteed to remain available. Existing icons are inline SVG; asset directories contain placeholders for future local images.
 

@@ -89,7 +89,6 @@ input,select{font:inherit;color:inherit}
 .row__pills{display:flex;gap:6px;flex-wrap:wrap;margin-top:7px}
 .pill{display:inline-flex;align-items:center;gap:5px;padding:4px 10px;border-radius:999px;font-size:11.4px;font-weight:700}
 .pill--rate{background:#fff6e4;color:#8a5c10;border:1px solid #f6e2ba}
-.pill--fee{background:#eef3fd;color:#22345c;border:1px solid #dbe5f7}
 .pill--ok{background:var(--okbg);color:var(--ok);border:1px solid #c9ecd8}
 .pill--warn{background:var(--warnbg);color:var(--warn);border:1px solid #f3dfc6}
 .pill--bad{background:var(--badbg);color:var(--bad);border:1px solid #f6d3cf}
@@ -340,39 +339,5 @@ input,select{font:inherit;color:inherit}
 .reviews-grid{width:100%;max-width:100%;min-width:0;grid-template-columns:minmax(0,1fr)}
 .reviews-grid > .card{width:100%;max-width:100%;min-width:0;box-sizing:border-box;margin:0}
 .reviews-grid .rev{min-width:0;overflow-wrap:anywhere}
-
-/* Compact, responsive fee comparison. Unknown fees never become zero totals. */
-.fee-panel{min-width:0}
-.fee-warning{padding:12px;border:1px solid #ebd299;background:#fff8e8;border-radius:10px;margin:12px 0;color:#70501b;font-size:12.5px}
-.fee-options{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 8px}
-.fee-note{font-size:12px;margin-bottom:16px}
-.fee-heading,.fee-course-row{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr) minmax(0,1fr) 82px;gap:12px;align-items:center}
-.fee-heading{font-size:11px;color:var(--mut);padding:10px 14px}
-.fee-list{display:grid;gap:10px}
-.fee-course{border:1px solid var(--line);border-radius:12px;overflow:hidden;min-width:0}
-.fee-course-row{padding:14px}
-.fee-name{font-size:13px;overflow-wrap:anywhere}
-.fee-quota{padding:10px;border-radius:9px;min-width:0;overflow-wrap:anywhere}
-.fee-gov{background:#edf3fc;color:#26417a}
-.fee-mgmt{background:#fff5de;color:#79520e}
-.fee-quota span,.fee-quota small{display:block;font-size:11px}
-.fee-quota b{font-size:14px}
-.fee-toggle{font-size:12px;font-weight:700;padding:8px 0;color:var(--navy)}
-.fee-toggle:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
-.fee-detail{padding:14px;border-top:1px solid var(--line);background:#fbfcfe;font-size:12px}
-.fee-break-row{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr) minmax(0,1fr);gap:10px;padding:10px 0;border-bottom:1px solid var(--line);overflow-wrap:anywhere}
-.fee-break-row b{text-align:right}
-.fee-break-head{color:var(--mut);font-size:11px}
-.fee-detail p{margin-top:12px}
-.fee-scholar{margin-top:14px}.fee-scholar summary{cursor:pointer;font-weight:700}
-.fee-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
-@media(max-width:640px){
- .fee-heading{display:none}
- .fee-course-row{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
- .fee-name,.fee-toggle{grid-column:1/-1}
- .fee-toggle{text-align:left}
- .fee-break-row{font-size:11px;gap:6px}
-}
-
 
 #root{min-height:100vh}

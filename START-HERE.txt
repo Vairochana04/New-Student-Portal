@@ -1,0 +1,32 @@
+STUDENT PORTAL - FINAL (READY TO RUN)
+====================================
+
+EASIEST WAY (WINDOWS)
+---------------------
+1. ZIP-ai full-aa Extract All pannunga.
+2. Student-Portal-NO-FEE-NEW folder-a open pannunga.
+3. RUN-PORTAL.bat-ai double-click pannunga.
+4. Browser-la localhost page open aagum. Open aagala-na:
+   http://localhost:5188
+5. Rendume command windows-ayum open-laye vechukonga.
+   Portal-ai stop panna andha windows-la Ctrl+C press pannunga.
+
+VS CODE-LA RUN PANNA
+--------------------
+1. VS Code -> File -> Open Folder -> Student-Portal-NO-FEE-NEW select pannunga.
+2. Terminal -> New Terminal.
+3. First time mattum: npm install
+4. Ctrl+Shift+P -> Tasks: Run Task -> ▶ RUN PORTAL (Backend + Website)
+5. Browser-la: http://localhost:5188
+
+DEMO LOGIN
+----------
+Email: student@demo.edu
+Password: student123
+
+IMPORTANT
+---------
+- Fee Structure section indha portal-la illa.
+- index.html-ai double-click pannaadhinga; mela sonna localhost link dhaan use pannanum.
+- Node.js LTS install aagirundha dhaan RUN-PORTAL.bat work aagum.
+- Pazhaya portal pazhaya port-la run aayittu irundha, adhai first close pannunga.

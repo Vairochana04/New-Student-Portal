@@ -1,7 +1,7 @@
 
 /* ===========================================================================
    PSG Campus Compass — a compact, standalone site (no build, no server).
-   Everything is sample data for a demo: fees, cutoffs, placements and reviews
+   Everything is sample data for a demo: cutoffs, placements and reviews
    are indicative, the same way the reference portals label their data.
    =========================================================================== */
 var COLLEGES = [
@@ -9,9 +9,9 @@ var COLLEGES = [
     id:'psg', name:'PSG College of Technology', short:'PSG Tech', mono:'PSG\nTECH',
     type:'Government-aided · Autonomous', estd:1951, city:'Peelamedu, Coimbatore',
     naac:'NAAC A++', nirf:'NIRF #63 (Engineering)', approval:'AICTE · Anna University',
-    fee:'₹60k – ₹1.5 L / year', seats:'8,500+ students', hostels:'Boys & girls hostels',
+    seats:'8,500+ students', hostels:'Boys & girls hostels',
     web:'https://www.psgtech.edu', rating:4.4,
-    cats:{Placements:4.6,Faculty:4.5,Infrastructure:4.7,'Campus life':4.3,'Fees value':4.1,Hostel:4.2},
+    cats:{Placements:4.6,Faculty:4.5,Infrastructure:4.7,'Campus life':4.3,Hostel:4.2},
     about:'Started in 1951 by PSG & Sons’ Charities, PSG Tech is a government-aided, autonomous institution affiliated to Anna University. Teaching runs on industry-institute interaction: centres of excellence with industry partners, internship and project semesters, and the PSG-STEP incubator inside the campus.',
     hl:[['Placement cell','Drives across UG and PG with core and IT recruiters'],
         ['Industry labs','Centres of excellence built with industry partners'],
@@ -41,16 +41,16 @@ var COLLEGES = [
       ['How do I apply to PSG Tech?','TNEA counselling handles government-quota seats; management-quota applications open on the college portal after the TNEA rank list.'],
       ['Is hostel available?','Yes — separate boys and girls hostels inside the campus, with mess facilities. Apply early; rooms fill up before the semester starts.'],
       ['Which documents should I keep ready?','Class 10 & 12 marksheets, transfer certificate, community/nativity certificate, entrance scorecard if any, and 4 passport photos.'],
-      ['Do I need a cutoff for management quota?','Management seats are filled on Class 12 marks plus a short interaction; the offer letter states the fee slab.']
+      ['Do I need a cutoff for management quota?','Management seats are filled on Class 12 marks plus a short interaction; the offer letter confirms the seat.']
     ]
   },
   {
     id:'psgitech', name:'PSG Institute of Technology and Applied Research', short:'PSG iTech', mono:'PSG\niTech',
     type:'Private · Autonomous', estd:2015, city:'Neelambur, Coimbatore',
     naac:'NAAC A', nirf:'Affiliated to Anna University', approval:'AICTE · Anna University',
-    fee:'₹1.1 L – ₹2.2 L / year', seats:'2,000+ students', hostels:'Boys & girls hostels',
+    seats:'2,000+ students', hostels:'Boys & girls hostels',
     web:'https://www.psgitech.ac.in', rating:4.2,
-    cats:{Placements:4.3,Faculty:4.2,Infrastructure:4.5,'Campus life':4.1,'Fees value':3.8,Hostel:4.2},
+    cats:{Placements:4.3,Faculty:4.2,Infrastructure:4.5,'Campus life':4.1,Hostel:4.2},
     about:'The youngest engineering campus of the PSG group, built on a 40-acre campus on the Avinashi Road side. Curriculum is fully autonomous with a semester-long industry internship, and the group’s placement network runs the final-year drives.',
     hl:[['Young campus','Opened in 2015 with modern blocks and labs'],
         ['Autonomous syllabus','Updated with industry advisors each year'],
@@ -82,14 +82,14 @@ var COLLEGES = [
     id:'psgcas', name:'PSG College of Arts & Science', short:'PSG CAS', mono:'PSG\nCAS',
     type:'Private · Autonomous', estd:1947, city:'Civil Aerodrome Post, Coimbatore',
     naac:'NAAC A+', nirf:'Ranked among TN arts & science colleges', approval:'Bharathiar University',
-    fee:'₹30k – ₹70k / year', seats:'7,000+ students', hostels:'Women’s hostel',
+    seats:'7,000+ students', hostels:'Women’s hostel',
     web:'https://www.psgcas.ac.in', rating:4.3,
-    cats:{Placements:4.1,Faculty:4.4,Infrastructure:4.5,'Campus life':4.6,'Fees value':4.7,Hostel:4.0},
+    cats:{Placements:4.1,Faculty:4.4,Infrastructure:4.5,'Campus life':4.6,Hostel:4.0},
     about:'One of the oldest and largest arts and science colleges in Tamil Nadu, started in 1947. Over 30 undergraduate programmes across science, commerce and arts, with a strong cultural calendar and a large alumni body.',
     hl:[['Since 1947','One of the oldest colleges in Tamil Nadu'],
         ['30+ UG programmes','Science, commerce, arts and management'],
         ['Cultural calendar','Festivals, clubs and inter-college events'],
-        ['Value fees','Aided programmes cost a fraction of self-financing']],
+        ['Aided programmes','Aided and self-financing programmes under one roof']],
     courses:[
       {n:'B.Sc. Computer Science', seats:140, cut:[null,null,null], mark:'Cutoff by Class 12 marks'},
       {n:'B.Com. (Accounting & Finance)', seats:120, cut:[null,null,null], mark:'Cutoff by Class 12 marks'},
@@ -103,8 +103,8 @@ var COLLEGES = [
        t:'Great teachers and a lively campus. The computer lab timings could be longer during the project semester.',
        p:'Lively campus, helpful faculty',c:'Lab slots are limited in the final semester'},
       {n:'Hari V.',tag:'B.Com. AF · Batch of 2023',r:4.5,
-       t:'For the fee we pay, the exposure is excellent — commerce association events, industry visits and internships arranged by the department.',
-       p:'Good value fees, many events',c:'Placements lean towards BPO and banking'}
+       t:'The exposure is excellent — commerce association events, industry visits and internships arranged by the department.',
+       p:'Many events, active associations',c:'Placements lean towards BPO and banking'}
     ],
     qa:[
       ['Does PSG CAS take students without Maths in Class 12?','Most science programmes ask for Maths or Biology, but B.Com., BBA and arts programmes accept any stream.'],
@@ -116,9 +116,9 @@ var COLLEGES = [
     id:'psgim', name:'PSG Institute of Management', short:'PSG IM', mono:'PSG\nIM',
     type:'Private · Business school', estd:1965, city:'Peelamedu, Coimbatore',
     naac:'NAAC A', nirf:'Top-5 B-schools in Tamil Nadu (private)', approval:'AICTE · Bharathiar University',
-    fee:'₹5.5 L – ₹7 L (2 years)', seats:'180 seats / year', hostels:'Hostel for men & women',
+    seats:'180 seats / year', hostels:'Hostel for men & women',
     web:'https://www.psgim.ac.in', rating:4.1,
-    cats:{Placements:4.3,Faculty:4.2,Infrastructure:4.1,'Campus life':4.2,'Fees value':3.7,Hostel:3.9},
+    cats:{Placements:4.3,Faculty:4.2,Infrastructure:4.1,'Campus life':4.2,Hostel:3.9},
     about:'A two-year, full-time MBA of the PSG group, running since 1965. Admissions come through TANCET/CAT/MAT scores plus a group discussion and interview; specialisations cover marketing, finance, HR, analytics and operations.',
     hl:[['Since 1965','Among the oldest B-schools in the state'],
         ['Specialisations','Marketing, finance, HR, business analytics'],
@@ -135,7 +135,7 @@ var COLLEGES = [
     reviews:[
       {n:'Manoj B.',tag:'MBA Finance · Batch of 2024',r:4.0,
        t:'Case discussions and the finance lab are the highlights. Placement prep starts early with mock GDs.',
-       p:'Good finance exposure, early prep',c:'Fees are on the higher side for a state B-school'},
+       p:'Good finance exposure, early prep',c:'Competition for top roles is high'},
       {n:'Anitha R.',tag:'MBA HR · Batch of 2023',r:4.2,
        t:'The faculty come with industry experience, so classes stay practical. The campus shares the PSG Tech energy next door.',
        p:'Practical classes, strong alumni',c:'Hostel is shared with the main campus'}
@@ -150,9 +150,9 @@ var COLLEGES = [
     id:'psgimsr', name:'PSG Institute of Medical Sciences & Research', short:'PSG IMSR', mono:'PSG\nIMSR',
     type:'Private · Medical college', estd:1985, city:'Peelamedu, Coimbatore',
     naac:'NAAC A', nirf:'Recognised by NMC', approval:'NMC · Dr. MGR Medical University',
-    fee:'₹70k (govt quota) – ₹12 L / year', seats:'150 MBBS seats', hostels:'Hostels & quarters',
+    seats:'150 MBBS seats', hostels:'Hostels & quarters',
     web:'https://www.psgimsr.ac.in', rating:4.5,
-    cats:{Placements:4.6,Faculty:4.6,Infrastructure:4.4,'Campus life':4.3,'Fees value':4.0,Hostel:4.1},
+    cats:{Placements:4.6,Faculty:4.6,Infrastructure:4.4,'Campus life':4.3,Hostel:4.1},
     about:'A 700-bed teaching hospital with an attached medical college, offering MBBS and postgraduate programmes. Admissions run through NEET-UG and NEET-PG state counselling, with an in-house hospital for clinical training.',
     hl:[['700-bed hospital','Clinical training inside the same campus'],
         ['NEET-based','UG and PG admissions through state counselling'],
@@ -184,9 +184,9 @@ var COLLEGES = [
     id:'psgnursing', name:'PSG College of Nursing', short:'PSG Nursing', mono:'PSG\nNURS',
     type:'Private · Nursing college', estd:1992, city:'Peelamedu, Coimbatore',
     naac:'NAAC A', nirf:'Approved by TN Nurses & Midwives Council', approval:'TN Dr. MGR Medical University',
-    fee:'₹40k – ₹90k / year', seats:'100 seats / year', hostels:'Women’s hostel',
+    seats:'100 seats / year', hostels:'Women’s hostel',
     web:'https://www.psgnursing.ac.in', rating:4.2,
-    cats:{Placements:4.3,Faculty:4.4,Infrastructure:4.1,'Campus life':4.0,'Fees value':4.2,Hostel:4.1},
+    cats:{Placements:4.3,Faculty:4.4,Infrastructure:4.1,'Campus life':4.0,Hostel:4.1},
     about:'A nursing college attached to the PSG Hospitals group, offering B.Sc. Nursing, P.B.B.Sc. and M.Sc. Nursing. Clinical practice happens in the 700-bed hospital next door, with community postings in nearby villages.',
     hl:[['Hospital attached','Clinical practice in PSG Hospitals'],
         ['Community postings','Rural health camps and school health programmes'],
@@ -217,9 +217,9 @@ var COLLEGES = [
     id:'psgpharma', name:'PSG College of Pharmacy', short:'PSG Pharmacy', mono:'PSG\nPHARM',
     type:'Private · Pharmacy college', estd:2001, city:'Peelamedu, Coimbatore',
     naac:'NAAC A', nirf:'Recognised by PCI', approval:'Pharmacy Council of India',
-    fee:'₹45k – ₹90k / year', seats:'100 seats / year', hostels:'Shared PSG hostels',
+    seats:'100 seats / year', hostels:'Shared PSG hostels',
     web:'https://www.psgpharmacy.ac.in', rating:4.2,
-    cats:{Placements:4.2,Faculty:4.3,Infrastructure:4.2,'Campus life':4.0,'Fees value':4.3,Hostel:4.0},
+    cats:{Placements:4.2,Faculty:4.3,Infrastructure:4.2,'Campus life':4.0,Hostel:4.0},
     about:'A Pharmacy Council of India approved college offering B.Pharm, M.Pharm and Pharm.D programmes. Industrial visits, formulation labs and a research focus carry the teaching; hospital practice happens with the PSG hospital pharmacy.',
     hl:[['PCI approved','B.Pharm, M.Pharm and Pharm.D programmes'],
         ['Formulation labs','Machine room with tablet, capsule and ointment lines'],
@@ -246,9 +246,9 @@ var COLLEGES = [
     id:'psgphysio', name:'PSG College of Physiotherapy', short:'PSG Physio', mono:'PSG\nPHYSIO',
     type:'Private · Physiotherapy college', estd:1998, city:'Peelamedu, Coimbatore',
     naac:'NAAC A', nirf:'Approved by TN Dr. MGR Medical University', approval:'TN Dr. MGR Medical University',
-    fee:'₹40k – ₹85k / year', seats:'60 seats / year', hostels:'Women’s hostel & shares',
+    seats:'60 seats / year', hostels:'Women’s hostel & shares',
     web:'https://www.psgphysiotherapy.ac.in', rating:4.3,
-    cats:{Placements:4.4,Faculty:4.4,Infrastructure:4.1,'Campus life':4.0,'Fees value':4.3,Hostel:3.9},
+    cats:{Placements:4.4,Faculty:4.4,Infrastructure:4.1,'Campus life':4.0,Hostel:3.9},
     about:'Offers BPT and MPT programmes with clinical training in the PSG Hospital physiotherapy department — orthopaedics, neurology, sports and cardiopulmonary rehabilitation.',
     hl:[['Hospital OPD','Treat patients under supervision from year two'],
         ['Sports rehab','Ties with local sports clubs for practical work'],
@@ -275,14 +275,14 @@ var COLLEGES = [
     id:'psgpoly', name:'PSG Polytechnic College', short:'PSG Polytechnic', mono:'PSG\nPOLY',
     type:'Government-aided · Polytechnic', estd:1936, city:'Peelamedu, Coimbatore',
     naac:'NAAC A', nirf:'One of the oldest polytechnics in India', approval:'AICTE · DOTE',
-    fee:'₹8k – ₹25k / year', seats:'500+ seats / year', hostels:'Boys hostel',
+    seats:'500+ seats / year', hostels:'Boys hostel',
     web:'https://www.psgpolytechnic.ac.in', rating:4.1,
-    cats:{Placements:4.2,Faculty:4.3,Infrastructure:4.0,'Campus life':3.9,'Fees value':4.8,Hostel:3.8},
+    cats:{Placements:4.2,Faculty:4.3,Infrastructure:4.0,'Campus life':3.9,Hostel:3.8},
     about:'Started in 1936, this is one of the oldest polytechnic colleges in the country. Diploma admissions run through the TN DOTE single-window counselling on Class 10 marks, with strong workshop training and lateral entry into engineering degrees afterwards.',
     hl:[['Since 1936','Almost nine decades of workshop training'],
         ['DOTE counselling','Diploma seats allotted on Class 10 marks'],
         ['Lateral entry','Diploma holders can join B.E. second year'],
-        ['Very low fees','Aided programmes cost a few thousand a year']],
+        ['Aided programmes','Government-aided diploma programmes']],
     courses:[
       {n:'Diploma in Mechanical Engineering', seats:120, cut:[null,null,null], mark:'TN DOTE single-window'},
       {n:'Diploma in Electrical & Electronics', seats:60, cut:[null,null,null], mark:'TN DOTE single-window'},
@@ -294,7 +294,7 @@ var COLLEGES = [
     reviews:[
       {n:'Sanjay K.',tag:'Diploma Mech · Batch of 2024',r:4.1,
        t:'The workshops are the best part — you spend real hours on machines. Placement support is decent for core companies.',
-       p:'Hands-on workshops, low fees',c:'Classrooms need renovation'}
+       p:'Hands-on workshops, good labs',c:'Classrooms need renovation'}
     ],
     qa:[
       ['How do I join after Class 10?','Apply through the TN DOTE single-window portal after your Class 10 results; branch allotment follows the rank list.'],
@@ -305,9 +305,9 @@ var COLLEGES = [
     id:'psgias', name:'PSG Institute of Advanced Studies', short:'PSG IAS', mono:'PSG\nIAS',
     type:'Private · Research institute', estd:2007, city:'Peelamedu, Coimbatore',
     naac:'Research institute', nirf:'PhD & research programmes', approval:'Anna University research centre',
-    fee:'₹42k – ₹60k / year', seats:'Research scholars', hostels:'Shared PSG hostels',
+    seats:'Research scholars', hostels:'Shared PSG hostels',
     web:'https://www.psgias.ac.in', rating:4.0,
-    cats:{Placements:3.8,Faculty:4.4,Infrastructure:4.2,'Campus life':3.9,'Fees value':4.2,Hostel:4.0},
+    cats:{Placements:3.8,Faculty:4.4,Infrastructure:4.2,'Campus life':3.9,Hostel:4.0},
     about:'The research wing of the PSG group — doctoral programmes, sponsored projects and industry consultancy. Scholars work alongside the engineering and management campuses on funded research in materials, energy, computing and management.',
     hl:[['Funded projects','DST, AICTE and industry-sponsored research'],
         ['PhD programmes','Part-time and full-time research scholars'],
@@ -334,9 +334,9 @@ var COLLEGES = [
     id:'kahe', grp:'karpagam', name:'Karpagam Academy of Higher Education', short:'Karpagam KAHE', mono:'KAHE',
     type:'Deemed university · Private', estd:2008, city:'Eachanari, Coimbatore',
     naac:'NAAC A+', nirf:'NIRF 101–150 (University)', approval:'UGC · AICTE',
-    fee:'₹55k – ₹1.6 L / year', seats:'8,000+ students', hostels:'Boys & girls hostels',
+    seats:'8,000+ students', hostels:'Boys & girls hostels',
     web:'https://kahedu.edu.in', rating:4.1,
-    cats:{Placements:4.0,Faculty:4.1,Infrastructure:4.3,'Campus life':4.2,'Fees value':3.9,Hostel:4.0},
+    cats:{Placements:4.0,Faculty:4.1,Infrastructure:4.3,'Campus life':4.2,Hostel:4.0},
     about:'Declared a deemed-to-be university in 2008, KAHE runs engineering, arts & science, commerce, management and pharmacy faculties on one campus at Eachanari on the Pollachi main road. Teaching mixes classroom work with internships, and the placement cell handles IT, core and BFSI drives.',
     hl:[['One campus','Engineering, arts & science, management and pharmacy together'],
         ['Deemed university','UGC-recognised, NAAC A+ accredited'],
@@ -371,9 +371,9 @@ var COLLEGES = [
     id:'kce', grp:'karpagam', name:'Karpagam College of Engineering', short:'Karpagam KCE', mono:'KCE',
     type:'Private · Autonomous', estd:2000, city:'Othakkal Mandapam, Coimbatore',
     naac:'NAAC A', nirf:'NIRF band 201–300 (Engineering)', approval:'AICTE · Anna University',
-    fee:'₹85k – ₹2.2 L / year', seats:'3,500+ students', hostels:'Boys & girls hostels',
+    seats:'3,500+ students', hostels:'Boys & girls hostels',
     web:'https://kce.ac.in', rating:4.2,
-    cats:{Placements:4.3,Faculty:4.1,Infrastructure:4.2,'Campus life':4.2,'Fees value':4.0,Hostel:3.9},
+    cats:{Placements:4.3,Faculty:4.1,Infrastructure:4.2,'Campus life':4.2,Hostel:3.9},
     about:'Autonomous engineering college on the Coimbatore–Pollachi road, running since 2000 with AICTE approval and Anna University affiliation. CSE, AI & Data Science, ECE and mechanical are the big branches, and the placement cell brings IT, core and auto-component recruiters to the campus.',
     hl:[['Autonomous','Syllabus and exams framed in-house under Anna University'],
         ['Core branches','CSE, AI & DS, ECE, EEE and mechanical with full lab facilities'],
@@ -408,9 +408,9 @@ var COLLEGES = [
     id:'kit', grp:'karpagam', name:'Karpagam Institute of Technology', short:'Karpagam KIT', mono:'KIT',
     type:'Private · Engineering', estd:2008, city:'Seerapalayam, Coimbatore',
     naac:'NAAC A', nirf:'Approved by AICTE', approval:'AICTE · Anna University',
-    fee:'₹80k – ₹2 L / year', seats:'1,800+ students', hostels:'Boys & girls hostels',
+    seats:'1,800+ students', hostels:'Boys & girls hostels',
     web:'https://karpagam.ac.in', rating:4.0,
-    cats:{Placements:4.0,Faculty:4.0,Infrastructure:4.1,'Campus life':4.0,'Fees value':4.1,Hostel:3.8},
+    cats:{Placements:4.0,Faculty:4.0,Infrastructure:4.1,'Campus life':4.0,Hostel:3.8},
     about:'A compact engineering campus at Seerapalayam, near the Karpagam group’s Eachanari base. Small branch sizes mean closer faculty contact, and the placement cell focuses on IT services and Coimbatore’s manufacturing and pump industries.',
     hl:[['Small branches','60-student intakes keep the faculty-student ratio tight'],
         ['Local industry','Pump, foundry and textile-machinery companies hire from here'],
@@ -443,9 +443,9 @@ var COLLEGES = [
     id:'kfmsr', grp:'karpagam', name:'Karpagam Faculty of Medical Sciences & Research', short:'Karpagam Medical', mono:'KARPA\nMED',
     type:'Private · Medical college', estd:2014, city:'Othakkal Mandapam, Coimbatore',
     naac:'NAAC A', nirf:'Recognised by NMC', approval:'NMC · Dr. MGR Medical University',
-    fee:'₹1.2 L (govt quota) – ₹18 L / year', seats:'150 MBBS seats', hostels:'Hostels & quarters',
+    seats:'150 MBBS seats', hostels:'Hostels & quarters',
     web:'https://karpagam.ac.in', rating:4.4,
-    cats:{Placements:4.5,Faculty:4.4,Infrastructure:4.4,'Campus life':4.2,'Fees value':3.8,Hostel:4.1},
+    cats:{Placements:4.5,Faculty:4.4,Infrastructure:4.4,'Campus life':4.2,Hostel:4.1},
     about:'Medical college and teaching hospital on the Coimbatore–Pollachi road, admitting 150 MBBS students a year through NEET counselling. Clinical training happens in the attached hospital, and postgraduate seats run under Dr. MGR Medical University.',
     hl:[['Teaching hospital','Attached hospital for clinical postings from the second year'],
         ['NEET route','MBBS seats through state and all-India NEET counselling'],
@@ -476,9 +476,9 @@ var COLLEGES = [
     id:'karpagampharm', grp:'karpagam', name:'Karpagam College of Pharmacy', short:'Karpagam Pharmacy', mono:'KARPA\nPHARM',
     type:'Private · Pharmacy college', estd:2008, city:'Eachanari, Coimbatore',
     naac:'NAAC A', nirf:'Recognised by PCI', approval:'Pharmacy Council of India · Dr. MGR Medical University',
-    fee:'₹50k – ₹1.1 L / year', seats:'100 seats / year', hostels:'Shared Karpagam hostels',
+    seats:'100 seats / year', hostels:'Shared Karpagam hostels',
     web:'https://karpagam.ac.in', rating:4.1,
-    cats:{Placements:4.1,Faculty:4.2,Infrastructure:4.1,'Campus life':4.0,'Fees value':4.1,Hostel:3.9},
+    cats:{Placements:4.1,Faculty:4.2,Infrastructure:4.1,'Campus life':4.0,Hostel:3.9},
     about:'Pharmacy college on the Karpagam Eachanari campus, approved by the Pharmacy Council of India. B.Pharm, Pharm.D and M.Pharm students train in pharmaceutical analysis and formulation labs, with hospital and industry postings.',
     hl:[['PCI approved','B.Pharm, Pharm.D and M.Pharm under Dr. MGR Medical University'],
         ['Labs','Formulation, analysis and pharmacology labs on campus'],
@@ -510,9 +510,9 @@ var COLLEGES = [
     id:'karpagamnurs', grp:'karpagam', name:'Karpagam College of Nursing', short:'Karpagam Nursing', mono:'KARPA\nNURSE',
     type:'Private · Nursing college', estd:2006, city:'Eachanari, Coimbatore',
     naac:'NAAC A', nirf:'Approved by TN Nurses & Midwives Council', approval:'TN Dr. MGR Medical University',
-    fee:'₹40k – ₹95k / year', seats:'100 seats / year', hostels:'Women’s hostel',
+    seats:'100 seats / year', hostels:'Women’s hostel',
     web:'https://karpagam.ac.in', rating:4.2,
-    cats:{Placements:4.4,Faculty:4.2,Infrastructure:4.1,'Campus life':4.0,'Fees value':4.2,Hostel:4.0},
+    cats:{Placements:4.4,Faculty:4.2,Infrastructure:4.1,'Campus life':4.0,Hostel:4.0},
     about:'Nursing college running B.Sc., P.B.B.Sc. and M.Sc. Nursing programmes under Dr. MGR Medical University. Clinical training happens across the Karpagam hospital and partner hospitals, and overseas recruiters visit for the final-year batch.',
     hl:[['Clinical training','Postings across Karpagam hospital and partner hospitals'],
         ['Council approved','Recognised by the TN Nurses & Midwives Council'],
@@ -835,7 +835,7 @@ function viewLogin(alert) {
     '<button class="btn btn--navy btn--block" type="submit">Sign in</button>' +
     '<div class="demo"><b>Demo account</b><code>' + esc(DEMO.email) + '<em>password ' + esc(DEMO.pw) + '</em></code>' +
       '<button class="btn btn--ghost" type="button" id="demoFill">Use demo login</button></div>' +
-    '<p class="legal"><b>Flow:</b> first time login \u2192 <b>Profile</b> details (10 &amp; 12 marks, location, hostel / day-scholar) \u2192 Save and submit \u2192 colleges display. Next time adhe email + password podunga \u2014 <b>register thevai illa</b>, unga details-a vachu colleges direct-a display aagum. Demo site \u2014 accounts, fees, cutoffs, placements and reviews are sample values.</p>' +
+    '<p class="legal"><b>Flow:</b> first time login \u2192 <b>Profile</b> details (10 &amp; 12 marks, location, hostel / day-scholar) \u2192 Save and submit \u2192 colleges display. Next time adhe email + password podunga \u2014 <b>register thevai illa</b>, unga details-a vachu colleges direct-a display aagum. Demo site \u2014 accounts, cutoffs, placements and reviews are sample values.</p>' +
     ((function () {
       var last = '';
       try { last = (JSON.parse(localStorage.getItem('pcc_user') || 'null') || {}).email || ''; } catch (e) {}
@@ -890,7 +890,7 @@ function viewList() {
   var body;
   if (pick) {
     body = '<div class="head"><h2>Two groups, in one list</h2><p>' + (hasCut ? 'Sorted by your chance and your place. ' : '') +
-        'Pick a group to see its campuses \u2014 ' + inGrp('psg').length + ' PSG institutions and ' + inGrp('karpagam').length + ' Karpagam institutions in and around Coimbatore. Ratings, fees and cutoffs are sample values.</p></div>' +
+        'Pick a group to see its campuses \u2014 ' + inGrp('psg').length + ' PSG institutions and ' + inGrp('karpagam').length + ' Karpagam institutions in and around Coimbatore. Ratings and cutoffs are sample values.</p></div>' +
       '<div class="strip">' +
         '<div><b>' + GROUPS.length + '</b><span>Groups</span></div>' +
         '<div><b>' + COLLEGES.length + '</b><span>Campuses</span></div>' +
@@ -902,7 +902,7 @@ function viewList() {
     var head = g
       ? '<div class="head"><h2>' + esc(g.name) + '</h2><p>' + (hasCut ? 'Sorted by your chance and your place. ' : '') + esc(g.blurb) + '</p></div>'
       : '<div class="head"><h2>' + (S.savedOnly ? 'Saved campuses' : 'Search results') + '</h2><p>' + rows.length + (rows.length === 1 ? ' campus' : ' campuses') +
-        (q ? ' match \u201c' + esc(S.q) + '\u201d' : '') + ' across both groups. Ratings, fees and cutoffs are sample values.</p></div>';
+        (q ? ' match \u201c' + esc(S.q) + '\u201d' : '') + ' across both groups. Ratings and cutoffs are sample values.</p></div>';
     var avg2 = rows.reduce(function (n, c) { return n + c.rating; }, 0) / (rows.length || 1);
     body = '<button class="back" id="allGroups">\u2190 All groups</button>' + head +
       '<div class="strip">' +
@@ -955,7 +955,6 @@ function rowHTML(c) {
         (function () { var ch = chanceOf(c); return ch ? '<span class="pill pill--' + ch.k + '">' + ch.txt + '</span>' : ''; })() +
         (nearMe(c) ? '<span class="pill pill--near">Near your place</span>' : '') +
         ratePill(c.rating) +
-        '<span class="pill pill--fee">' + esc(c.fee) + '</span>' +
         (top && top.cut[2] != null ? '<span class="pill pill--' + tr.code + '">' + esc(top.n.replace(/^(B\.E\.|B\.Tech|B\.Sc\.)\s*/, '')) + ' cutoff ' + tr.arrow + ' ' + top.cut[2] + '</span>' : '') +
       '</span>' +
     '</span>' +
@@ -967,7 +966,7 @@ function rowHTML(c) {
 
 function viewDetail(c) {
   var savedOn = S.saved.indexOf(c.id) >= 0;
-  var tabs = [['overview','Overview'],['courses','Courses & cutoff'],['fees','Fee structure'],['placements','Placements'],['location','Location'],['reviews','Reviews'],['qa','Q & A']];
+  var tabs = [['overview','Overview'],['courses','Courses & cutoff'],['placements','Placements'],['location','Location'],['reviews','Reviews'],['qa','Q & A']];
   return '' +
   '<header class="top"><div class="wrap top__in">' +
     '<span class="brand"><span class="brand__mark">PSG</span><span><b>PSG Campus Compass</b><small>PSG + Karpagam institutions · one clean page</small></span></span>' +
@@ -1010,7 +1009,6 @@ function tabOverview(c) {
       '<h4>Quick facts</h4>' +
       '<div class="kv">' +
         '<div><span>Programmes</span><b>' + c.courses.length + ' listed</b></div>' +
-        '<div><span>Fee range</span><b>' + esc(c.fee) + '</b></div>' +
         '<div><span>Seats</span><b>' + esc(c.seats) + '</b></div>' +
         '<div><span>Hostel</span><b>' + esc(c.hostels) + '</b></div>' +
         '<div><span>Rating</span><b>★ ' + c.rating.toFixed(1) + '/5</b></div>' +
@@ -1024,43 +1022,10 @@ function tabOverview(c) {
       '<h4>Recruiters seen on campus <span class="mut" style="font-weight:600">\u00b7 ' + c.recruiters.length + ' logos, left \u2192 right</span></h4>' +
       recruiterStrip(c) +
       '<p class="mut" style="margin-top:8px;font-size:11.8px">Tiles run with each brand\u2019s own logo mark \u2014 monogram fallback when a logo cannot load. Demo use only.</p>' +
-      '<h4 style="margin-top:16px">Fee snapshot</h4>' +
-      '<p class="mut" style="font-size:12.6px">' + esc(c.fee) + '. Government-quota seats cost far less than management quota; the offer letter states your slab.</p>' +
       '<h4 style="margin-top:16px">Next step</h4>' +
       '<p class="mut" style="font-size:12.6px">Open the courses tab to see the closing cutoff of the last three years, then check the Q&amp;A tab for hostel and document questions.</p>' +
     '</section>' +
   '</div>';
-}
-
-/* Illustrative planning inputs only: NOT a college fee schedule.
-   Numeric templates apply only to UG B.E./B.Tech demo courses. */
-var FEE_DEMO = { counselling:55000, management:125000, exam:5000, other:10000,
-  hostel:45000, mess:40000, bus:25000, once:10000 };
-function feeMode() {
-  if (S.feeMode) return S.feeMode;
-  var p = S.profile || {};
-  return p.stay === 'Hostel' ? 'hostel' : p.travel === 'College bus' ? 'bus' : 'other';
-}
-function feeKnown(x) { return /^B\.(E\.|Tech)/i.test(x.n); }
-function feeMoney(v) { return '₹' + v.toLocaleString('en-IN'); }
-function feeAnnual(quota, mode) {
-  return FEE_DEMO[quota] + FEE_DEMO.exam + FEE_DEMO.other +
-    (mode === 'hostel' ? FEE_DEMO.hostel + FEE_DEMO.mess : mode === 'bus' ? FEE_DEMO.bus : 0);
-}
-function feeBreakdown(x, mode, index) {
-  if (!feeKnown(x)) return '<div class="fee-detail" id="fee-detail-' + index + '"><p>Fee not available for this programme. Counselling / government-quota and management-quota availability must also be confirmed with the college.</p><p><a href="' + esc(college(S.id).web) + '" target="_blank" rel="noopener noreferrer">Check the official college website ↗</a></p></div>';
-  var rows = [['Tuition / year',FEE_DEMO.counselling,FEE_DEMO.management], ['Exam fees / year',FEE_DEMO.exam,FEE_DEMO.exam], ['Other mandatory fees / year',FEE_DEMO.other,FEE_DEMO.other]];
-  if (mode === 'hostel') rows.push(['Hostel / year',FEE_DEMO.hostel,FEE_DEMO.hostel],['Mess / year',FEE_DEMO.mess,FEE_DEMO.mess]);
-  if (mode === 'bus') rows.push(['College bus / year — route-dependent',FEE_DEMO.bus,FEE_DEMO.bus]);
-  if (mode === 'other') rows.push(['College transport — not selected',0,0]);
-  rows.push(['Annual recurring total',feeAnnual('counselling',mode),feeAnnual('management',mode)],['One-time charges — first year only',FEE_DEMO.once,FEE_DEMO.once],['Estimated first-year total',feeAnnual('counselling',mode)+FEE_DEMO.once,feeAnnual('management',mode)+FEE_DEMO.once]);
-  return '<div class="fee-detail" id="fee-detail-' + index + '"><div class="fee-break"><div class="fee-break-row fee-break-head"><b>Illustrative breakdown</b><b>Counselling</b><b>Management</b></div>' + rows.map(function(r){return '<div class="fee-break-row"><span>' + esc(r[0]) + '</span><b>' + feeMoney(r[1]) + '</b><b>' + feeMoney(r[2]) + '</b></div>';}).join('') + '</div><p class="mut">Private travel, books and personal expenses are not included. Bus and hostel availability, routes, deposits and additional charges require college confirmation.</p><details class="fee-scholar"><summary>Scholarships & concessions</summary><p>Ask the admissions office about first-graduate concessions, eligible community/income-based government scholarships and institutional merit aid. Eligibility, quota coverage and award amounts vary. No scholarship is assumed or deducted from these totals; get written approval before budgeting.</p></details></div>';
-}
-function tabFees(c) {
-  var mode = feeMode();
-  return '<section class="card fee-panel"><h3>Fee structure · All departments</h3><p class="fee-warning"><b>Illustrative demo estimates — not official fees.</b> These generic UG engineering planning amounts are the same across campuses and departments; actual fees can differ. No academic-year fee schedule has been verified. Confirm quota availability and the complete fee schedule with the college.</p>' +
-    '<div class="fee-options" role="group" aria-label="Stay and travel for fee estimate">' + [['hostel','Hostel + mess'],['bus','Day scholar · College bus'],['other','Day scholar · Other travel']].map(function(o){return '<button type="button" class="pchip' + (mode === o[0] ? ' on' : '') + '" data-fee-mode="' + o[0] + '" aria-pressed="' + (mode === o[0]) + '">' + o[1] + '</button>';}).join('') + '</div><p class="mut fee-note">Starts from your profile preference. Changing this estimate does not change your saved profile. All amounts are in INR per year unless marked one-time.</p>' +
-    '<div class="fee-heading"><b>Department</b><b>Counselling quota</b><b>Management quota</b><span></span></div><div class="fee-list">' + c.courses.map(function(x,i){var known=feeKnown(x), key=c.id+':'+i, open=S.feeOpen===key;return '<article class="fee-course"><div class="fee-course-row"><b class="fee-name">' + esc(x.n) + '</b><div class="fee-quota fee-gov"><span>Counselling</span><b>' + (known ? feeMoney(feeAnnual('counselling',mode)) : 'Confirm with college') + '</b>' + (known ? '<small>approx. / year</small>' : '') + '</div><div class="fee-quota fee-mgmt"><span>Management</span><b>' + (known ? feeMoney(feeAnnual('management',mode)) : 'Confirm with college') + '</b>' + (known ? '<small>approx. / year</small>' : '') + '</div><button type="button" class="fee-toggle" data-fee-open="' + i + '" aria-expanded="' + open + '" aria-controls="fee-detail-' + i + '">' + (open ? 'Close ▴' : 'Details ▾') + '<span class="fee-sr"> for ' + esc(x.n) + '</span></button></div>' + (open ? feeBreakdown(x,mode,i) : '') + '</article>';}).join('') + '</div></section>';
 }
 
 function tabCourses(c) {
@@ -1273,7 +1238,7 @@ function avgOf(c) {
   return isNaN(v) ? 0 : v;
 }
 function campusLine(c) {
-  return '<li><b>' + esc(c.short) + '</b> \u2014 ' + esc(c.type.split(' \u00b7 ')[0]) + ' \u00b7 \u2605 ' + c.rating.toFixed(1) + ' \u00b7 avg ' + esc(c.place[0].avg) + ' \u00b7 ' + esc(c.fee) + '</li>';
+  return '<li><b>' + esc(c.short) + '</b> \u2014 ' + esc(c.type.split(' \u00b7 ')[0]) + ' \u00b7 \u2605 ' + c.rating.toFixed(1) + ' \u00b7 avg ' + esc(c.place[0].avg) + '</li>';
 }
 function groupAnswer(q) {
   if (hasAny(q, ['how many college', 'how many campus', '10 college', 'list of psg', 'ella campus', 'ellame campus', 'evlo campus', 'which colleges', 'which karpagam', 'karpagam college',
@@ -1290,7 +1255,7 @@ function groupAnswer(q) {
   if (hasAny(q, ['total seat', 'seats in total', 'overall seat', 'ella seat'])) {
     var total = 0;
     COLLEGES.forEach(function (c) { c.courses.forEach(function (x) { total += x.seats || 0; }); });
-    return { text: '<b>Listed seats across the ' + COLLEGES.length + ' campuses shown here:</b> ' + total + ' (sample \u2014 only the programmes listed on this page).', chips: ['Which college for CSE?', 'Fees evlo?', 'Hostel irukka?'] };
+    return { text: '<b>Listed seats across the ' + COLLEGES.length + ' campuses shown here:</b> ' + total + ' (sample \u2014 only the programmes listed on this page).', chips: ['Which college for CSE?', 'Placement epdi?', 'Hostel irukka?'] };
   }
   if (hasAny(q, ['group placement', 'psg placement', 'overall placement', 'best placement'])) {
     var sorted = COLLEGES.slice().sort(function (a, b) { return avgOf(b) - avgOf(a); });
@@ -1307,10 +1272,9 @@ function groupAnswer(q) {
       var top = target.courses[0];
       return { text: '<b>' + esc(d.what) + '</b> \u2014 idhu <b>' + esc(target.name) + '</b> la irukku (sample).<ul class="botlist">' +
           '<li>' + esc(target.type) + ' \u00b7 est. ' + target.estd + ' \u00b7 ' + esc(target.naac) + '</li>' +
-          '<li>Fee ' + esc(target.fee) + ' \u00b7 ' + esc(target.seats) + '</li>' +
           '<li>' + esc(top.n) + (top.cut[2] != null ? ' cut-off ' + top.cut[2] + ' (2026)' : '') + ' \u00b7 avg ' + esc(target.place[0].avg) + '</li>' +
         '</ul>Their page is in this list \u2014 open <b>' + esc(target.short) + '</b> for the three-year cutoff and placement tables.',
-        chips: [target.short + ' fees?', target.short + ' cutoff?', target.short + ' placement?'] };
+        chips: [target.short + ' cutoff?', target.short + ' placement?', target.short + ' hostel?'] };
     }
   }
   if (hasAny(q, ['best', 'compare', 'vs', 'better'])) {
@@ -1323,8 +1287,8 @@ function groupAnswer(q) {
     if (rows.length > 1) {
       return { text: '<b>Same branch across the group (sample, 2026 closing cutoff):</b><ul class="botlist">' + rows.map(function (r) {
           return '<li><b>' + esc(r.c.short) + '</b> \u2014 ' + esc(r.cr.n) + ': ' + r.cr.cut[2] + ' \u00b7 avg ' + esc(r.c.place[0].avg) + '</li>';
-        }).join('') + '</ul>Higher cutoff = harder to get in. Weigh the fee and the location too \u2014 cutoff alone is not the whole story.',
-        chips: ['Fees compare', 'Which college for CSE?', 'Hostel irukka?'] };
+        }).join('') + '</ul>Higher cutoff = harder to get in. Weigh the location and placements too \u2014 cutoff alone is not the whole story.',
+        chips: ['Placement compare', 'Which college for CSE?', 'Hostel irukka?'] };
     }
   }
   return null;
@@ -1365,12 +1329,11 @@ function courseTable(c) {
   }).join('') + '</ul>';
 }
 var CHIPS = {
-  fee: ['Hostel fee evlo?', 'Scholarship irukka?', 'Seats ethana?'],
-  hostel: ['Hostel rules?', 'Fees evlo?', 'Getting there?'],
+  hostel: ['Hostel rules?', 'CSE cutoff?', 'Getting there?'],
   place: ['Top recruiters?', 'Highest package?', 'CSE cutoff?'],
   cut: ['Seats ethana?', 'Management quota?', 'Documents enna venum?'],
   loc: ['Bus route irukka?', 'Hostel irukka?', 'Campus phone number?'],
-  adm: ['Documents enna venum?', 'Management quota?', 'Fees evlo?'],
+  adm: ['Documents enna venum?', 'Management quota?', 'CSE cutoff?'],
   gen: ['CSE cutoff?', 'Placement epdi?', 'Hostel irukka?']
 };
 function botAnswer(c, raw) {
@@ -1390,12 +1353,11 @@ function botAnswer(c, raw) {
       '<br><span class="mut">From this campus\u2019s own sample Q&amp;A \u2014 rules and dates change every year.</span>', chips: CHIPS.adm };
   var g = groupAnswer(q);
   if (g) return g;
-  var fee = '<b>' + esc(c.short) + ' fees:</b> ' + esc(c.fee) + ' (sample). Government-quota seats under TNEA cost far less than management quota — your offer letter states the slab. Hostel and mess are billed separately.';
   var seat = '<b>' + esc(c.short) + ' seats:</b> ' + c.courses.map(function (x) { return esc(x.n.replace(/^(B\.E\.|B\.Tech|B\.Sc\.|M\.B\.B\.S|M\.B\.A)\s*/, '')) + ' ' + x.seats; }).join(' · ') + '. Total campus strength: ' + esc(c.seats) + ' (sample).';
 
-  // hostel first: it owns "hostel", even when the user also says "fee"/"evlo"
+  // hostel first: it owns "hostel" questions
   if (hasAny(q, ['hostel', 'room', 'mess', 'saapadu', 'stay'])) {
-    return { text: '<b>Hostel:</b> ' + esc(c.hostels) + ' at ' + esc(c.short) + ' (sample). Mess is included in the hostel bill; apply right after admission — rooms fill before the semester starts. ' + (hasAny(q, ['fee', 'fees', 'evlo', 'cost', 'amount']) ? 'Hostel + mess usually runs ₹45k – ₹1.2 L a year here (sample).' : ''),
+    return { text: '<b>Hostel:</b> ' + esc(c.hostels) + ' at ' + esc(c.short) + ' (sample). Mess facility is available; apply right after admission — rooms fill before the semester starts. ',
       chips: CHIPS.hostel };
   }
   if (hasAny(q, ['address', 'where is', 'enga', 'location', 'map', 'bus', 'travel', 'route', 'reach', 'phone', 'contact', 'number', 'mail', 'email', 'website', 'site'])) {
@@ -1420,13 +1382,12 @@ function botAnswer(c, raw) {
   }
   if (hasAny(q, ['seat', 'intake', 'how many'])) return { text: seat, chips: CHIPS.cut };
   if (hasAny(q, ['course', 'branch', 'department', 'dept', 'programme', 'program', 'degree', 'study'])) return { text: '<b>Courses listed for ' + esc(c.short) + ':</b>' + courseTable(c) + 'Open the Courses tab for the three-year cutoff of each branch.', chips: CHIPS.cut };
-  if (hasAny(q, ['scholarship', 'free seat', 'concession', '7 5', 'first graduate', 'fee waiver'])) return { text: '<b>Scholarships (sample):</b> government-quota (TNEA) seats already carry the low fee; first-graduate, community and merit scholarships are applied for through the college office after admission. Ask the admission desk for the current list and last date.', chips: CHIPS.fee };
+  if (hasAny(q, ['scholarship', 'free seat', 'concession', '7 5', 'first graduate'])) return { text: '<b>Scholarships &amp; concessions (sample):</b> first-graduate, community and merit scholarships are applied for through the college office after admission. Ask the admission desk for the current list, eligibility and last date.', chips: CHIPS.adm };
   if (hasAny(q, ['document', 'certificate', 'marksheet', 'mark sheet', 'tc ', 'transfer certificate', 'nativity', 'photo'])) return { text: '<b>Keep ready:</b> Class 10 &amp; 12 marksheets, transfer certificate, community / nativity certificate, entrance scorecard (if any), Aadhaar, and 4 passport photos — original plus two copies.', chips: CHIPS.adm };
   if (hasAny(q, ['admission', 'apply', 'application', 'counsel', 'quota', 'management', 'process', 'join'])) return { text: '<b>Admission route:</b> government-quota seats go through TNEA counselling (medical courses through NEET), management-quota applications open on the college portal after the rank list. Start with the marksheets and the TNEA/NEET scorecard.', chips: CHIPS.adm };
-  if (hasAny(q, ['rating', 'review', 'opinion', 'worth', 'nalla', 'student sonna'])) return { text: '<b>Student rating:</b> ★ ' + c.rating.toFixed(1) + '/5 (sample) with ' + c.reviews.length + ' reviews on this page. Category scores sit in the Reviews tab — placements ' + c.cats.Placements + ', infrastructure ' + c.cats.Infrastructure + ', fees value ' + c.cats['Fees value'] + '.', chips: ['Reviews la enna sonnanga?', 'Placement epdi?', 'Fees evlo?'] };
+  if (hasAny(q, ['rating', 'review', 'opinion', 'worth', 'nalla', 'student sonna'])) return { text: '<b>Student rating:</b> ★ ' + c.rating.toFixed(1) + '/5 (sample) with ' + c.reviews.length + ' reviews on this page. Category scores sit in the Reviews tab — placements ' + c.cats.Placements + ', infrastructure ' + c.cats.Infrastructure + ', hostel ' + c.cats.Hostel + '.', chips: ['Reviews la enna sonnanga?', 'Placement epdi?', 'Hostel irukka?'] };
   if (hasAny(q, ['naac', 'nirf', 'rank', 'accredit', 'approv', 'aicte', 'anna university'])) return { text: '<b>' + esc(c.naac) + ' · ' + esc(c.nirf) + '</b> · ' + esc(c.approval) + ' (sample).', chips: CHIPS.gen };
   if (hasAny(q, ['about', 'history', 'founded', 'established', 'estd', 'when start', 'epo start'])) return { text: esc(c.about), chips: CHIPS.gen };
-  if (hasAny(q, ['fee', 'fees', 'kattanam', 'cost', 'amount', 'evlo', 'price', 'how much', 'money', 'expense'])) return { text: fee, chips: CHIPS.fee };
 
   // last try: any word overlap with the campus Q&A already written on this page
   var words = q.split(' '), bestQ = null, bestScore = 0;
@@ -1436,8 +1397,8 @@ function botAnswer(c, raw) {
     if (score > bestScore) { bestScore = score; bestQ = x; }
   });
   if (bestScore >= 2) return { text: '<b>' + esc(bestQ[0]) + '</b><br>' + esc(bestQ[1]), chips: CHIPS.gen };
-  return { text: 'Indha kelvi-ku en kita ready answer illa 😅 — but I can still help with <b>fees, cutoffs, seats, hostel, placements, documents, admission and location</b>. Type it in your own words \u2014 or reach the admission desk directly; their phone, email and map are in the Location tab.',
-    chips: ['Fees evlo?', 'CSE cutoff?', 'Hostel irukka?'] };
+  return { text: 'Indha kelvi-ku en kita ready answer illa 😅 — but I can still help with <b>cutoffs, seats, hostel, placements, documents, admission and location</b>. Type it in your own words \u2014 or reach the admission desk directly; their phone, email and map are in the Location tab.',
+    chips: ['CSE cutoff?', 'Placement epdi?', 'Hostel irukka?'] };
 }
 function chatPush(cid, role, text, chips) {
   if (!S.chat[cid]) S.chat[cid] = [];
@@ -1455,7 +1416,7 @@ function chatLogHTML(c) {
   var log = S.chat[c.id];
   if (!log || !log.length) {
     var starter = c.qa.slice(0, 3).map(function (x) { return x[0]; });
-    return chatBubble({ r: 'b', t: 'Vanakkam! 👋 Naan <b>' + esc(c.short) + '</b> campus assistant (demo). Fees, cutoff, seats, hostel, placement, documents, admission illa location — edhuvenum kelunga, English illa Tanglish la. Group pathi-um kettukalaam: “which college for MBA?”, “PSG la evlo campus?” Keezha irukira kelviya tap pannalum answer kidaikkum.', c: starter });
+    return chatBubble({ r: 'b', t: 'Vanakkam! 👋 Naan <b>' + esc(c.short) + '</b> campus assistant (demo). Cutoff, seats, hostel, placement, documents, admission illa location — edhuvenum kelunga, English illa Tanglish la. Group pathi-um kettukalaam: “which college for MBA?”, “PSG la evlo campus?” Keezha irukira kelviya tap pannalum answer kidaikkum.', c: starter });
   }
   return log.map(chatBubble).join('') + (S.typing ? '<div class="msg msg--b msg--typing"><i></i><i></i><i></i></div>' : '');
 }
@@ -1523,7 +1484,7 @@ function tabQA(c) {
       '<span class="spacer"></span>' + ((S.chat[c.id] && S.chat[c.id].length) ? '<button class="chip" id="chatClear">Clear chat</button>' : '') + '</div>' +
     '<div class="chatlog" id="chatLog">' + chatLogHTML(c) + '</div>' +
     '<div class="chatbar">' +
-      '<input id="chatInput" type="text" placeholder="Ask anything — “CSE cutoff?”, “hostel fee evlo?”, “placement epdi?”" value="' + esc(S.chatDraft || '') + '" />' +
+      '<input id="chatInput" type="text" placeholder="Ask anything — “CSE cutoff?”, “hostel irukka?”, “placement epdi?”" value="' + esc(S.chatDraft || '') + '" />' +
       '<button class="btn btn--navy" id="chatSend">Send</button>' +
     '</div>' +
     '<p class="mut" style="margin-top:8px;font-size:11.8px">A demo bot — it reads the sample values on this page, not the internet. Numbers need confirming with the college.</p>' +
@@ -1578,10 +1539,8 @@ document.addEventListener('submit', function (e) {
 });
 document.addEventListener('click', function (e) {
   var t = e.target;
-  var el = t.closest ? t.closest('[data-fee-mode],[data-fee-open],[data-open],[data-save],[data-tab],[data-ask],[data-lvl],[data-stay],[data-hostel],[data-travel],[data-stream],[data-want],[data-degree],[data-grp]') : null;
+  var el = t.closest ? t.closest('[data-open],[data-save],[data-tab],[data-ask],[data-lvl],[data-stay],[data-hostel],[data-travel],[data-stream],[data-want],[data-degree],[data-grp]') : null;
 
-  if (el && el.hasAttribute('data-fee-mode')) { S.feeMode = el.getAttribute('data-fee-mode'); render(); return; }
-  if (el && el.hasAttribute('data-fee-open')) { var fk = S.id + ':' + el.getAttribute('data-fee-open'); S.feeOpen = S.feeOpen === fk ? null : fk; render(); return; }
 
   if (t.id === 'demoFill') {
     document.getElementById('em').value = DEMO.email;
@@ -1669,4 +1628,4 @@ if (typeof fetch === 'function') {
 
 }
 
-export { S, COLLEGES, college, viewLogin, viewDetails, viewList, viewDetail, tabOverview, tabCourses, tabFees, tabPlacements, tabLocation, tabReviews, tabQA, logoFallback };
+export { S, COLLEGES, college, viewLogin, viewDetails, viewList, viewDetail, tabOverview, tabCourses, tabPlacements, tabLocation, tabReviews, tabQA, logoFallback };

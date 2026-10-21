@@ -1,0 +1,28 @@
+========================================================
+  NEW STUDENT PORTAL  -  30-SECOND QUICK START
+========================================================
+
+You need:
+  - Node.js 20+  (https://nodejs.org  -  download LTS version)
+  - Python 3     (comes with Windows / Mac / Linux; if not, install from https://python.org)
+
+----- OPTION A (easiest) -----
+  Windows users:  double-click  START-WINDOWS.bat
+  Mac / Linux:    open a terminal here and run:  bash START-MAC-LINUX.sh
+
+----- OPTION B (manual) -----
+  1. Open a terminal in this folder
+  2. Run these commands (in separate terminals):
+
+        npm install
+        npm run backend        # Terminal 1  -  API server on port 8092
+        npm run dev            # Terminal 2  -  website on http://localhost:5173
+
+  3. Open your browser and visit   http://localhost:5173
+
+----- DEMO LOGIN -----
+  Email:     student@demo.edu
+  Password:  student123
+
+If anything goes wrong, see RUN.txt for full step-by-step help.
+========================================================

@@ -1,0 +1,78 @@
+========================================================
+  NEW STUDENT PORTAL  -  FULL RUN GUIDE
+========================================================
+
+PREREQUISITES
+--------------------------------------------------------
+1. Node.js 20 or newer
+   - Download from https://nodejs.org (LTS recommended)
+   - After installing, open a NEW terminal and verify:
+       node --version        (should print v20.x.x or higher)
+       npm --version
+
+2. Python 3 (needed only for the backend if you don't have Java)
+   - Download from https://python.org
+   - Verify:
+       python --version     (Windows)
+       python3 --version    (Mac / Linux)
+
+
+STEP 1 - INSTALL DEPENDENCIES (only ONCE)
+--------------------------------------------------------
+Open a terminal in this folder and run:
+
+    npm install
+
+This creates a node_modules/ folder with React, Vite, etc.
+
+
+STEP 2 - START THE APP
+--------------------------------------------------------
+You need TWO terminals (two Command Prompt / PowerShell / Terminal windows),
+both opened in this folder.
+
+TERMINAL 1  (Backend API)
+    npm run backend
+    Wait until you see a line like:
+        "PSG Campus Compass - http://0.0.0.0:8092"
+        "demo login: student@demo.edu / student123"
+
+TERMINAL 2  (Frontend website)
+    npm run dev
+    Wait until you see:
+        "Local:   http://localhost:5173/"
+
+
+STEP 3 - OPEN THE SITE
+--------------------------------------------------------
+Open your browser and go to:   http://localhost:5173
+
+Demo login:
+    Email:     student@demo.edu
+    Password:  student123
+
+
+STOPPING
+--------------------------------------------------------
+In each terminal press Ctrl+C to stop the servers.
+
+
+TROUBLESHOOTING
+--------------------------------------------------------
+- "npm is not recognized"
+   -> Node.js is not installed, or not on your PATH.
+      Reinstall Node.js from https://nodejs.org and RESTART your terminal.
+
+- "Port 5173 already in use"
+   -> Another Vite server is running. Close the other one, or change the port
+      with:  npm run dev -- --port 5174  (then visit http://localhost:5174)
+
+- "Port 8092 already in use"
+   -> The backend is already running somewhere; kill that process or use
+      PORT=9000 npm run backend  (Mac/Linux)
+      $env:PORT=9000; npm run backend   (PowerShell)
+
+- Blank page or errors in the browser console
+   -> Delete node_modules/ and package-lock.json, then run  npm install  again.
+
+========================================================

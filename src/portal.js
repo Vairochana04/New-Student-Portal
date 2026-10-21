@@ -967,7 +967,7 @@ function rowHTML(c) {
 
 function viewDetail(c) {
   var savedOn = S.saved.indexOf(c.id) >= 0;
-  var tabs = [['overview','Overview'],['courses','Courses & cutoff'],['fees','Fee structure'],['placements','Placements'],['location','Location'],['reviews','Reviews'],['qa','Q & A']];
+  var tabs = [['overview','Overview'],['courses','Courses & cutoff'],['placements','Placements'],['location','Location'],['reviews','Reviews'],['qa','Q & A']];
   return '' +
   '<header class="top"><div class="wrap top__in">' +
     '<span class="brand"><span class="brand__mark">PSG</span><span><b>PSG Campus Compass</b><small>PSG + Karpagam institutions · one clean page</small></span></span>' +
@@ -1669,4 +1669,4 @@ if (typeof fetch === 'function') {
 
 }
 
-export { S, COLLEGES, college, viewLogin, viewDetails, viewList, viewDetail, tabOverview, tabCourses, tabFees, tabPlacements, tabLocation, tabReviews, tabQA, logoFallback };
+export { S, COLLEGES, college, viewLogin, viewDetails, viewList, viewDetail, tabOverview, tabCourses, tabPlacements, tabLocation, tabReviews, tabQA, logoFallback };
